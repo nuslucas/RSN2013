@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "_HomepageRightSidebar";
 
+    
     FollowPeers.Models.FollowPeersDBEntities followPeersDB = new FollowPeers.Models.FollowPeersDBEntities();
     string name = Membership.GetUser().UserName;
     FollowPeers.Models.UserProfile myprofile = followPeersDB.UserProfiles.SingleOrDefault(p => p.UserName == name);
